@@ -1,18 +1,19 @@
-# Project Setup and Execution Guide
+# Blood Test Report Analyser
 
-## Getting Started
+A FastAPI service that processes uploaded blood test PDF reports and provides evidence‑based medical, nutritional, and exercise recommendations using CrewAI agents.
 
-### Install Required Libraries
-```sh
-pip install -r requirement.txt
-```
+---
 
-# You're All Not Set!
-🐛 **Debug Mode Activated!** The project has bugs waiting to be squashed - your mission is to fix them and bring it to life.
+## 🚀 Features
 
-## Debugging Instructions
+- **Automated Report Parsing**  
+  Reads and cleans PDF blood test reports via `PyPDFLoader`.
 
-1. **Identify the Bug**: Carefully read the code and understand the expected behavior.
-2. **Fix the Bug**: Implement the necessary changes to fix the bug.
-3. **Test the Fix**: Run the project and verify that the bug is resolved.
-4. **Repeat**: Continue this process until all bugs are fixed.
+- **Multi‑Agent Analysis**  
+  - **Doctor**: Interprets lab results and gives medical insights.  
+  - **Verifier**: Validates report structure and extracts key parameters.  
+  - **Nutritionist**: Recommends dietary adjustments based on markers.  
+  - **Exercise Specialist**: Designs safe exercise plans aligned with health data.
+
+- **Search Integration**  
+  Incorporates web searches (via `SerperDevTool`) to fetch guidelines or references.
